@@ -1,6 +1,3 @@
-require "lsu_tigers_roster_app/version"
+require_relative './lsu_tigers_roster_app/version'
+require_relative './lsu_tigers_roster_app/cli'
 
-module LsuTigersRosterApp
-  class Error < StandardError; end
-  # Your code goes here...
-end

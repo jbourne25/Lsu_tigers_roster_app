@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require './lib/lsu_tigers_roster_app'
+
+LsuTigersRosterApp::CLI.new.call
