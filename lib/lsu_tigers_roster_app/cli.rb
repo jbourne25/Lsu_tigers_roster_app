@@ -1,7 +1,7 @@
 class LsuTigersRosterApp::CLI
   
   def call
-    LsuTigersRosterApp::Scraper.new.scraper_roster
+    #LsuTigersRosterApp::Scraper.new.scraper_roster
     puts "Welcome to the LSU Tigers Roster App."
     main_menu
   end 
@@ -30,7 +30,7 @@ class LsuTigersRosterApp::CLI
   
   def list_players
     puts nil
-  Player.all.each.with_index(1){ |p, i| puts "#{i}. #{p.name}"}
+  LsuTigersRosterApp::Player.all.each.with_index(1){ |p, i| puts "#{i}. #{p.name}"}
     player_list_menu 
   end 
   
