@@ -30,7 +30,7 @@ class LsuTigersRosterApp::CLI
   
   def list_players
     puts nil
-    #Player.all.each.with_index(1){ |p, i| puts "#{i}. #{p.name}"}
+  Player.all.each.with_index(1){ |p, i| puts "#{i}. #{p.name}"}
     player_list_menu 
   end 
   
