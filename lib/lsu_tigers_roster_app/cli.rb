@@ -1,7 +1,7 @@
 class LsuTigersRosterApp::CLI
   
   def call
-    #Scraper.new.scrape_roster
+    LsuTigersRosterApp::Scraper.new.scraper_roster
     puts "Welcome to the LSU Tigers Roster App."
     main_menu
   end 
