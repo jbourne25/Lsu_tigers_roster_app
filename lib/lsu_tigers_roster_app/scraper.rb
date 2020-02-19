@@ -1,8 +1,10 @@
+require 'pry'
 class LsuTigersRosterApp::Scraper 
   
   def scraper_roster
     
     doc = Nokogiri::HTML(open("https://www.lsusports.net/sports/football/roster/2019.com"))
+    binding.pry
     player_docs = doc.css(".sidearm-roster-players-container").text 
     player_docs.each do |player_doc|
     

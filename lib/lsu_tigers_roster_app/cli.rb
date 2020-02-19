@@ -1,7 +1,7 @@
 class LsuTigersRosterApp::CLI
   
   def call
-    #LsuTigersRosterApp::Scraper.new.scraper_roster
+    LsuTigersRosterApp::Scraper.new.scraper_roster
     puts "Welcome to the LSU Tigers Roster App."
     main_menu
   end 
@@ -24,6 +24,10 @@ class LsuTigersRosterApp::CLI
     end 
   end
   
+  def byebye 
+    puts "Thanks for visiting"
+  end
+  
   def wrong_input
     puts "That's not an option, please try again."
   end 
@@ -39,7 +43,7 @@ class LsuTigersRosterApp::CLI
     puts "or type 'exit' to leave site, or 'menu' to start over."
     
     input = gets.strip 
-    index = input.to_i -1
+    index = input.to_i 
     if input == "menu"
       main_menu
     elsif input == "exit"
