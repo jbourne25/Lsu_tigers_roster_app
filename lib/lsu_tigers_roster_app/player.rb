@@ -5,7 +5,7 @@ class LsuTigersRosterApp::Player
   attr_accessor :name, :position
   
   def self.create(name, position)
-    p = Player.new 
+    p = LsuTigersRosterApp::Player.new 
     p.name = name 
     p.position = position
     p.save 

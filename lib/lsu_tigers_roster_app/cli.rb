@@ -34,7 +34,7 @@ class LsuTigersRosterApp::CLI
   
   def list_players
     puts nil
-  LsuTigersRosterApp::Player.all.each.with_index(1){ |p, i| puts "#{i}. #{p.name}"}
+  LsuTigersRosterApp::Player.all.each.with_index(0){ |p, i| puts "#{i}. #{p.name}"}
     player_list_menu 
   end 
   
@@ -48,7 +48,7 @@ class LsuTigersRosterApp::CLI
       main_menu
     elsif input == "exit"
       byebye
-    elsif index.between?(0, Player.all.length)
+    elsif index.between?(0, LsuTigersRosterApp::Player.all.length)
       display_player(index)
     else 
       wrong_input
@@ -57,7 +57,7 @@ class LsuTigersRosterApp::CLI
   end 
   
   def display_player(index)
-    player = Player.all[index]
+    player = LsuTigersRosterApp::Player.all[index]
     puts player.info 
     
     display_player_menu
