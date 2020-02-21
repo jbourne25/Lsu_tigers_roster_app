@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'pry'
+#require 'pry'
 
 require "bundler/setup"
 require "lsu_tigers_roster_app"
