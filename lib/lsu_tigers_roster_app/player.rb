@@ -30,6 +30,4 @@ class LsuTigersRosterApp::Player
     INFO
   end 
   
-end 
-  
-  
+end
