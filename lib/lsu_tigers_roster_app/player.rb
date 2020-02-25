@@ -2,12 +2,15 @@ class LsuTigersRosterApp::Player
   
   @@all = []
   
-  attr_accessor :name, :position
+  attr_reader :name, :position
+  
+  def initialize(name, position)
+    @name = name
+    @position = position
+  end
   
   def self.create(name, position)
-    p = LsuTigersRosterApp::Player.new 
-    p.name = name 
-    p.position = position
+    p = LsuTigersRosterApp::Player.new(name, position)
     p.save 
   end 
   

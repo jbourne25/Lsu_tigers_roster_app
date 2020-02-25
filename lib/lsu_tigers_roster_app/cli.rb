@@ -5,7 +5,7 @@ class LsuTigersRosterApp::CLI
     puts "Welcome to the LSU Tigers Roster App."
     main_menu
   end 
-  
+ 
   def main_menu
     puts "What would you like to do?"
     puts ""
@@ -82,4 +82,4 @@ class LsuTigersRosterApp::CLI
       display_player_menu
     end 
   end 
-end 
+end
